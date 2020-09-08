@@ -1,15 +1,49 @@
 window.addEventListener('load', function(){
-    new Glider(document.querySelector('.glider'), {
+    new Glider(document.getElementById('glider2'), {
       slidesToScroll: 1,
       slidesToShow: 4,
       draggable: true,
       dots: '.dots',
       arrows:{
-          prev : '.glider-prev',
-          next : '.glider-next'
+          prev : '#glider-prev-id-2',
+          next : '#glider-next-id-2'
       },
-      
-
+      responsive: [
+        {
+          // screens greater than >= 775px
+          breakpoint: 900,
+          settings: {
+            // Set to `auto` and provide item width to adjust to viewport
+            slidesToShow: 4,
+            slidesToScroll: 1,
+            itemWidth: 150,
+            duration: 0.25,
+            draggable: true,
+          }
+        },{
+          // screens greater than >= 775px
+            breakpoint: 576,
+            settings: {
+              // Set to `auto` and provide item width to adjust to viewport
+              slidesToShow: 2,
+              slidesToScroll: 1,
+              itemWidth: 150,
+              duration: 0.25,
+              draggable: true,
+          }
+        },{
+          // screens greater than >= 775px
+            breakpoint: 100,
+            settings: {
+              // Set to `auto` and provide item width to adjust to viewport
+              slidesToShow: 1,
+              slidesToScroll: 1,
+              itemWidth: 150,
+              duration: 0.25,
+              draggable: true,
+          }
+        }
+      ]
     })
   })
 
@@ -27,6 +61,46 @@ window.addEventListener('load', function(){
     }
 })
 
+
+
+window.addEventListener('load', function(){
+  new Glider(document.getElementById('glider1'), {
+    slidesToScroll: 1,
+    slidesToShow: 1,
+    dots: '#dots-id',
+    arrows:{
+        prev : '#glider-prev-id',
+        next : '#glider-next-id'
+    },
+    responsive: [
+      {
+        // screens greater than >= 775px
+        breakpoint: 775,
+        settings: {
+          // Set to `auto` and provide item width to adjust to viewport
+          slidesToShow: 1,
+          slidesToScroll: 1,
+          itemWidth: 150,
+          duration: 0.25,
+          draggable: true,
+        }
+      },{
+        // screens greater than >= 775px
+          breakpoint: 100,
+          settings: {
+            // Set to `auto` and provide item width to adjust to viewport
+            slidesToShow: 1,
+            slidesToScroll: 1,
+            itemWidth: 150,
+            duration: 0.25,
+            draggable: true,
+        }
+      }
+    ]
+  })
+})
+
+/*
   // banner slider managment
   const track = document.querySelector('.carousel-track')
   const slides = Array.from(track.children)
@@ -75,7 +149,7 @@ window.addEventListener('load', function(){
     const currentDot = dotsNav.querySelector('.current-slide')
     const prevDot = currentDot.previousElementSibling
     const prevIndex = slides.findIndex(slide => slide === prevSlide)
-
+    console.log('up slide clicked')
     updateDot(currentDot, prevDot)
     moveToSlide(track, currentSlide, prevSlide)
     showHideButton(prevIndex, prevButton, nextButton, slides)
@@ -88,7 +162,7 @@ window.addEventListener('load', function(){
     const currentDot = dotsNav.querySelector('.current-slide')
     const nextDot = currentDot.nextElementSibling
     const nextIndex = slides.findIndex(slide => slide === nextSlide)
-
+    console.log('down slide clicked')
     updateDot(currentDot, nextDot)
     moveToSlide(track, currentSlide, nextSlide)
     showHideButton(nextIndex, prevButton, nextButton, slides)
@@ -101,7 +175,7 @@ window.addEventListener('load', function(){
     const targetDot = e.target.closest('button');
 
     if(!targetDot) return
-
+    console.log('nav indicator clicked', targetDot)
     const currentSlide = track.querySelector('.current-slide')
     const currentDot = dotsNav.querySelector('.current-slide')
     const targetIndex = dots.findIndex( dot => dot === targetDot)
@@ -111,9 +185,4 @@ window.addEventListener('load', function(){
     updateDot(currentDot, targetDot)
     showHideButton(targetIndex, prevButton, nextButton, slides)
     })
-
-    //footer auto update copyright
-    /*$(document).ready(function () {
-      var a = (new Date().getFullYear()) ? new Date().getFullYear() : "2010"
-      $("p.copyright").html("&copy; "+ a + " Monster studio");
-    });*/
+*/

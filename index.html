@@ -10,6 +10,10 @@
     <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@600&family=Marcellus+SC&family=Sen&display=swap" rel="stylesheet">
     <!--styles-->
     <link rel="stylesheet" href="/css/styles.css" >
+    <!--mobile styles-->
+    <link rel="stylesheet" href="/css/mobile.css">
+    <!-- tablette style-->
+    <link rel="stylesheet" href="/css/tablette.css">
     <!--glider-->
     <link rel="stylesheet" type="text/css" href="/css/glider.min.css">
     <title>Document</title>
@@ -82,94 +86,63 @@
           </div>
         </div> 
         <div class="slider-item">
-          <ul class="carousel-track">
-            <li class="carousel-slide current-slide">
-              <img class="big-image" src="assets/image1.jpg"/>
-              <div class="slide-overlay">
-                <div class="text-motif">
-                  <p class="titre">Evasion </p> <p class="sous-titre">by liberte Oran</p>
-                  <p class="paragraphe">Poussez la porte et laissez vous transporter... <br/> decouvrirez un univers unique 
-                    fait de calme et de douceur.
-                  </p>
+          <div class="glider-contain" id='glider-contain1'>
+            <div class="glider" id='glider1'>
+              <div class="glider-image">
+                <img class='image-1' src="assets/image7.jpg"/>
+                <div class="slide-overlay">
+                  <div class="text-motif">
+                    <p class="titre">Bain Turc </p> <p class="sous-titre">by liberté Oran</p>
+                    <p class="paragraphe">Poussez la porte et laissez vous transporter... <br/> decouvrirez un univers unique 
+                      fait de calme et de douceur.
+                    </p>
+                  </div>
                 </div>
               </div>
-            </li>
-            <li class="carousel-slide">
-              <img class="big-image" src="assets/image2.jpg"/>
-              <div class="slide-overlay">
-                <div class="text-motif">
-                  <p class="titre">Evasion </p> <p class="sous-titre">by liberté Oran</p>
-                  <p class="paragraphe">Poussez la porte et laissez vous transporter... <br/> decouvrirez un univers unique 
-                    fait de calme et de douceur.
-                  </p>
+              <div class="glider-image">
+                <img class='image-1' src="assets/image8.jpg"/>
+                <div class="slide-overlay">
+                  <div class="text-motif">
+                    <p class="titre">Piscine Semi-olympique </p> <p class="sous-titre">by liberté Oran</p>
+                    <p class="paragraphe">Poussez la porte et laissez vous transporter... <br/> decouvrirez un univers unique 
+                      fait de calme et de douceur.
+                    </p>
+                  </div>
                 </div>
               </div>
-            </li>
-            <li class="carousel-slide">
-              <img class="big-image" src="assets/image3.jpg"/>
-              <div class="slide-overlay">
-                <div class="text-motif">
-                  <p class="titre">Spa et Bien-etre </p> <p class="sous-titre">by liberté Oran</p>
-                  <p class="paragraphe">Poussez la porte et laissez vous transporter... <br/> decouvrirez un univers unique 
-                    fait de calme et de douceur.
-                  </p>
+              <div class="glider-image">
+                <img class='image-1' src="assets/image1.jpg"/>
+                <div class="slide-overlay">
+                  <div class="text-motif">
+                    <p class="titre">Evasion </p> <p class="sous-titre">by liberte Oran</p>
+                    <p class="paragraphe">Poussez la porte et laissez vous transporter... <br/> decouvrirez un univers unique 
+                      fait de calme et de douceur.
+                    </p>
+                  </div>
                 </div>
               </div>
-            </li>
-            <li class="carousel-slide">
-              <img class="big-image" src="assets/image4.jpg"/>
-              <div class="slide-overlay">
-                <div class="text-motif">
-                  <p class="titre">Spa et Bien-etre </p> <p class="sous-titre">by liberté Oran</p>
-                  <p class="paragraphe">Poussez la porte et laissez vous transporter... <br/> decouvrirez un univers unique 
-                    fait de calme et de douceur.
-                  </p>
+              <div class="glider-image">
+                <img class='image-1' src="assets/image2.jpg"/>
+                <div class="slide-overlay">
+                  <div class="text-motif">
+                    <p class="titre">Evasion </p> <p class="sous-titre">by liberte Oran</p>
+                    <p class="paragraphe">Poussez la porte et laissez vous transporter... <br/> decouvrirez un univers unique 
+                      fait de calme et de douceur.
+                    </p>
+                  </div>
                 </div>
               </div>
-            </li>
-            <li class="carousel-slide">
-              <img class="big-image" src="assets/image7.jpg"/>
-              <div class="slide-overlay">
-                <div class="text-motif">
-                  <p class="titre">Bain Turc </p> <p class="sous-titre">by liberté Oran</p>
-                  <p class="paragraphe">Poussez la porte et laissez vous transporter... <br/> decouvrirez un univers unique 
-                    fait de calme et de douceur.
-                  </p>
-                </div>
-              </div>
-            </li>
-            <li class="carousel-slide">
-              <img class="big-image" src="assets/image6.jpg"/>
-              <div class="slide-overlay">
-                <div class="text-motif">
-                  <p class="titre">Sport & Fitness </p> <p class="sous-titre">by liberté Oran</p>
-                  <p class="paragraphe">Poussez la porte et laissez vous transporter... <br/> decouvrirez un univers unique 
-                    fait de calme et de douceur.
-                  </p>
-                </div>
-              </div>
-            </li>
-          </ul>
-          <div class="carousel-track-overlay">
-              <div class="buttons-container ">
-                <button class="carousel_button carousel_button--up">
-                  <img class="direction-icon" src="assets/up-arrow.png"/>
-                </button>
-                <button class="carousel_button carousel_button--down is-hidden">
-                  <img class="direction-icon" src="assets/down-arrow.png"/>
-                </button>
-              </div>
-              <div class="carousel-nav">
-                <button class="carousel-indicator current-slide"></button>
-                <button class="carousel-indicator"></button>
-                <button class="carousel-indicator"></button>
-                <button class="carousel-indicator"></button>
-                <button class="carousel-indicator"></button>
-                <button class="carousel-indicator"></button>
-              </div>
+            </div>
+              <button aria-label="Previous" class="glider-prev" id='glider-prev-id'>
+                <img class="slider-icon" src="assets/left-arrow.png"/>
+              </button>
+              <button aria-label="Next" class="glider-next" id="glider-next-id">
+                <img class="slider-icon" src="assets/right-arrow.png"/>
+              </button>
+              <div role="tablist" class="dots" id="dots-id"></div>
           </div>
         </div>
-    </div>
+    </div>    
     <div class="content">
       <img class="motif-marbre" src="/assets/marbre-plante.png"/>
       <img class="motif-coin" src="/assets/coin.png"/>
@@ -191,10 +164,10 @@
         <div class="trait"></div>
         <p class="content-titre">Nos services</p>
         <div class="glider-contain">
-          <button aria-label="Previous" class="glider-prev">
+          <button aria-label="Previous" class="glider-prev" id="glider-prev-id-2">
             <img class="slider-icon" src="assets/left-arrow.png"/>
           </button>
-          <div class="glider">
+          <div class="glider" id="glider2">
             <div class="card-services">
               <div class="services-icon-container">
                 <img class="service-icon" src="assets/gym1.svg"/>
@@ -267,7 +240,7 @@
           </div>
         <div class="service-description-container">
           <h5>Theatre</h5>
-          <p class="service-description">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Labore minima a voluptatibus! Consequatur, ducimus veniam? Corrupti, fugit! Commodi, blanditiis illum modi similique quisquam sed ea sint amet deserunt. Veniam, est.</p>
+          <p class="service-description">Soyez aux premieres loges du centre de notre theatre evasion . Venez decouvrir des momments inoubliables avec notre spectacles et  evenements culturelles ,artistiques et bien autres.</p>
         </div>
         </div>
         <div class="card-services">
@@ -298,10 +271,10 @@
         </div>
         </div>
           </div>
-          <button aria-label="Next" class="glider-next">
+          <button aria-label="Next" class="glider-next" id="glider-next-id-2">
             <img class="slider-icon" src="assets/right-arrow.png"/>
           </button>
-          <div class="dots" ></div>
+          <div class="dots" id="dots-id-2"></div>
         </div>  
       </div>
     </div>
@@ -365,7 +338,6 @@
             <div class="pricing-card-detail">
               <h4 class="price-title">Spa</h4>
               <p class="price-paragraphe">Lorem ipsum, dolor sit amet consectetur adipisicing elit.</p>
-              <p class="price">2000.00 Da</p>
               <button class="princing-card-button">voir plus</button>
             </div>
           </div>
@@ -376,7 +348,6 @@
             <div class="pricing-card-detail">
               <h4 class="price-title">Salle de sport</h4>
               <p class="price-paragraphe">Lorem ipsum, dolor sit amet consectetur adipisicing elit.</p>
-              <p class="price" class="price">2000.00 Da</p>
               <button class="princing-card-button">voir plus</button>
             </div>
           </div>
@@ -387,7 +358,6 @@
             <div class="pricing-card-detail">
               <h4 class="price-title">Sonna</h4>
               <p class="price-paragraphe">Lorem ipsum, dolor sit amet consectetur adipisicing elit.</p>
-              <p class="price">2000.00 Da</p>
               <button class="princing-card-button">voir plus</button>
             </div>
           </div>
@@ -398,7 +368,6 @@
             <div class="pricing-card-detail">
               <h4 class="price-title">Sallon de coiffure</h4>
               <p class="price-paragraphe">Lorem ipsum, dolor sit amet consectetur adipisicing elit. </p>
-              <p class="price">2000.00 Da</p>
               <button class="princing-card-button">voir plus</button>
             </div>
           </div>
@@ -407,14 +376,15 @@
       <div class="contact">
         <div class="trait"></div>
         <p class="content-titre">Contact</p>
-          <form class="contact-form">
-            <input class="contact-input" placeholder="Votre Nom"/>
-            <input class="contact-input" placeholder="Votre Prenom"/>
-            <input class="contact-input" placeholder="Votre email"/>
-            <textarea class="contact-input-message" placeholder="Votre Message..."></textarea>
-            <button class="contact-button">Envoyer</button>
+          <form class="contact-form" action="message_handler.php" method="post">
+            <input type="text" name="nom" class="contact-input" placeholder="Votre Nom"/>
+            <input type="text" name="prenom" class="contact-input" placeholder="Votre Prenom"/>
+            <input type="text" name="email" class="contact-input" placeholder="Votre email"/>
+            <textarea type="text" name="message" class="contact-input-message" placeholder="Votre Message..."></textarea>
+            <button type="submit" name="submit" class="contact-button">Envoyer</button>
           </form>
       </div>
+      
     </div>
 
       <div class="footer">
@@ -424,7 +394,7 @@
             <p>Un merveilleux ecrin dedie a la relaxation, au bien-etre, a l'art et au sport afin de prendre soin de vous dans un cadre moderne et chaleureux</p>          
           </div>
           <div class="footer-col">
-            <div class="footer-row">
+            <div class="footer-row2">
               <div class="footer-col">
                 <h6 class="title">Liens rapide</h6>
                 <p class="text">A-propos<br/>Services<br/>Galerie<br/>Pricing<br/>Contact</p>
@@ -474,3 +444,31 @@
       <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
     </body>   
 </html>
+
+<!--
+  <?php
+          if (isset($_POST['submit'])){
+
+              $nom=$_POST['nom']; 
+              $prenom=$_POST['prenom'];  
+              $email=$_POST['email'];
+              $msg=$_POST['message'];
+
+              $to='hhammoumi@monsterstudio.com';
+              $message="Nom :".$nom."\t"
+                      ."Prenom : ".$prenom."\n"
+                      ."Email:".$email."\n
+                      "." Message :"."\n\n".$msg;
+
+              $headers="From : ".$email;
+
+              if(mail($to,$message,$headers)){
+              /* header("Location: cantact.php?mailsend");*/
+              echo"<script> alert('Votre message à bien été envoyé."."\n"." merci de nous avoir contacter')</script>";
+              }
+              else { 
+                  echo"<script> alert('Une erreur s'est produite."."\n"." Veuillez reéssayer)</script>";
+              }
+          }    
+        ?>
+-->

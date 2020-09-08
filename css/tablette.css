@@ -1,0 +1,364 @@
+@media only screen and (min-device-width: 700px) and (max-device-width: 1024px) and (max-device-height: 1400px) {
+    .banner{
+        width:100%;
+        height: 60vh;
+      }
+  
+      .motif-marbre{
+          top:50vh;
+      }
+      
+      .motif-coin{
+          display: block;
+        top:60vh;
+      }
+      
+      .motif-plante{
+          width: 400px;
+          height: 800px;
+          position: absolute;
+          left: 0px;
+          top:2100px;
+          z-index: -10;
+          opacity: 0.2;
+      }
+      
+      .motif-logo{
+          width: 400px;
+          height: 400px;
+          right: 0;
+          top:3500px;
+          z-index: -10;
+          opacity: 0.4;
+      }
+      
+      .motif-pierre{
+          width: 400px;
+          height: 200px;
+          left: 0;
+          top:4300px;
+      }
+      
+      /*_________________________________________________________*/
+      .trait{
+          width:10rem;
+          height: 5px;
+          border-radius: 10px;
+          margin: 3em auto 0;
+      }
+  
+      .navbar-item{
+          position: absolute;
+          top:0;
+          width:100%;
+          height:10%;
+          z-index: 10;
+      }
+  
+      .navbar-item{
+          grid-column: 1 / span 16;
+          grid-row: 1 / 2;
+          z-index: 10;
+      }
+      .scrolled{
+          height:10vh;
+      }
+      
+      .brand{
+          width: 20%;
+          height: 15%;
+          margin-left : 10%;
+      }
+      
+      .navbar-left{
+          margin-left:auto;
+          font-size: medium;
+          font-weight: 500;
+      }
+      
+      .navbar-right{
+          margin-right:auto;
+          font-size: medium;
+          font-weight: 500;
+      }
+      
+      nav .navbar-left li a{
+          color: white !important;
+      }
+      
+      nav .navbar-right li a{
+          color:white !important;
+      }
+  
+      .logo-sur-marbre{
+          width: 130px;
+          height: 150px;
+      }
+  
+      .sm-button{
+          width:0.5em;
+          height: 0.5em;
+          margin-right: 0.5rem;
+      }
+  /*_______________________________________________________________*/
+      
+      .titre{
+          color: honeydew;
+          font-size: 1em;
+          font-weight: 700;
+          font-family: 'Marcellus SC', serif;
+          letter-spacing: 5px;
+          margin :0;
+          padding: 0;
+          height:32px;
+      }
+      
+      .paragraphe{
+          font-size: 0.3em;
+          margin: 1% 0;
+      }
+  
+      .content-titre{
+          font-size: 1em;
+          font-weight: 500;
+          padding: 0;
+          margin: 1% 0 5% 0;
+       }
+       
+       .content-paragraphe{
+           font-size: 0.4em;
+           font-weight: 400;
+           font-family: 'Sen', serif;
+           color:#43432B;
+           padding: 0;
+           margin: 15% 0;
+       }
+  
+       #glider-prev-id{
+          top:92% !important;
+          left :80% !important;
+          width:40px !important;
+          height:40px !important;
+      }
+      
+      #glider-next-id{
+          top:92% !important;
+          left :90% !important;
+          width:40px !important;
+          height:40px !important;
+      }
+
+      #dots-id{
+        top:93%;
+        left :5%;
+    }
+      
+       /*______________________services_____________________*/
+       .card-services{
+          width: 25%;
+          height: 100vh;
+        }
+        
+        .services-icon-container{
+            height: 100px;
+            width:100px;
+            border: #4f4f33 solid 3px;
+            border-radius: 50%;
+            padding: 5%;
+        }
+        
+        .service-icon{
+            width:60px;
+            height: 60px;
+            
+        }
+        
+        .service-description-container{
+            height: 60%;
+            padding: 2% 5%;
+         }
+         
+         .service-description{
+             margin: 5% 4% 5% 4%;
+             font-size: 0.3em;
+         }
+        
+      .slider-icon{
+          width:20px;
+          height: 20px;
+      }
+  
+      .galery{
+          margin-top: 2em;
+          width: 100%;
+          height: 60vh;
+      }
+       
+       .carousel-item{
+           height: 60vh !important;
+       }
+  
+       img.d-block.w-100{
+           height: 100% !important;
+           object-fit: cover;
+       }
+  
+       img.image-1{
+          object-fit: cover;
+       }
+  
+       /*-------------pricing--------------*/
+  
+      .pricing-cards-container{
+          width: 100%;
+          height: 116vh;
+          padding:0;
+          margin: 0;
+          display: flex;
+          flex-direction: column;
+          justify-content: center;
+          align-items: center;
+      }
+   
+      .pricing-card{
+          width: 80%;
+          height: 27vh;
+          margin: 2vh 0;
+      }
+      
+      
+      .princing-card-button{
+          border-radius: 5px;
+          border: none;
+          height: 25%;
+          width: 20%;
+          font-size: 0.4em;
+      }
+      
+      /*------------contact-------------*/
+      
+      .contact-input{
+          width: 100%;
+          font-size: 0.6em;
+      }
+      
+      .contact-input-message{
+          width: 100%;
+          font-size: 0.6em;
+      }
+      
+      .contact-button{
+          width: 40%;
+          margin: 5% 0;
+          font-size: 0.6em;
+      }
+      
+      /*-------------footer-------------*/
+      .footer{
+          height: 81vh;
+          font-size: 0.4em;
+          display: flex;
+          flex-direction:column;
+          justify-content: center;
+          align-items: center;
+          text-align: center;
+          padding:0;
+      }
+      
+      .footer-row{
+          display: flex;
+          flex-direction: column;
+          justify-content: start;
+          align-items: center;
+          padding: 0 2%;
+      }
+  
+      .footer-row2{
+          width: 100%;
+      }
+      
+      .footer-row--right{
+          width: 100%;
+          height: 92%;
+      }
+      
+      .footer-row--last{
+          height: 8%;
+      }
+      
+      .footer-col{
+          display: flex;
+          flex-direction: column;
+          justify-content: center;
+          align-items: center;
+          width: 100%;
+          height: 25vh;
+          margin: 2vh 0;
+          padding :0 4%;
+      }
+      
+      .logo-footer-container{
+          display: flex;
+          flex-direction: row;
+      }
+      
+      .logo-footer{
+          width: 250px;
+          height: 65px;
+          margin-bottom: 2%;
+      }
+      
+      .icon-info{
+          width: 20px;
+          height: 20px;
+          margin: 2%;
+      }
+      
+      .info-row{
+          display: flex;
+          width: 100%;
+          flex-direction: row;
+          justify-content: center;
+          margin: 1% 0 0 0;
+      }
+      
+      .copyright{
+          margin-top: 1%;
+      }
+      
+      p{
+          padding: 0;
+          margin: 0;
+      }
+      
+      .sm-button-footer{
+          background-color: beige ;
+          opacity: 0.8;
+          border-radius: 50%;
+          width:2.5rem;
+          height: 2.5rem;
+          margin-right: 0.5rem;
+          display: flex;
+          flex-direction: column;
+          justify-content: center;
+          align-items: center;
+      }
+      
+      .sm-container-footer{
+          display: flex;
+          flex-direction: row;
+          justify-content: flex-start;
+          padding: 1%;
+      }
+      
+      .sm-icon-footer{
+          width:50%;
+          height:50%;
+          color: #43432B;
+      }
+   
+      .title{
+          margin-bottom: 20%;
+      }
+  
+    }

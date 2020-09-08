@@ -1,0 +1,64 @@
+<p class="mb-0" style="color: #fff !important;padding-bottom: 0px !important;font-size: 20px;">
+    Copyright &copy;
+           <script>
+              document.write(new Date().getFullYear());
+            </script> 
+    Evasion By Liberte Oran - Created by <a href="https://www.monsterstudio.org" style="color:#98da02;" target="_blank">Monster Studio</a>
+            
+</p>
+
+
+
+
+//contact
+<form action="message_handler.php" method="post" class="contact-form">
+          <div class="row">
+            <div class="col-md-6">
+                <div class="form-group">
+                <input style="font-size: 22px;" type="text" name="nom" class="form-control" placeholder="Nom Prenom">
+              </div>
+            </div>
+            <div class="col-md-6">
+              <div class="form-group">
+                <input style="font-size: 22px;" type="text" name="email" class="form-control" placeholder="Votre Email">
+              </div>
+              </div>
+          </div>
+          <div class="form-group">
+            <input style="font-size: 22px;" type="text" name="sujet" class="form-control" placeholder="Objet">
+          </div>
+          <div class="form-group">
+            <textarea style="font-size: 22px;" name="msg" cols="30" rows="7" class="form-control" placeholder="Message"></textarea>
+          </div>
+          <div class="form-group">
+            <input type="submit" name="submit" value="Envoyer" class="btn btn-primary py-3 px-5">
+          </div>
+        </form>
+
+
+<?php
+    if (isset($_POST['submit'])){
+
+        $nom=$_POST['nom']; 
+        $prenom=$_POST['prenom'];  
+        $email=$_POST['email'];
+        $msg=$_POST['message'];
+
+        $to='hhammoumi@monsterstudio.com';
+        $message="Nom :".$nom."\t"
+                ."Prenom : ".$prenom."\n"
+                ."Email:".$email."\n
+                 "." Message :"."\n\n".$msg;
+
+        $headers="From : ".$email;
+
+        if(mail($to,$message,$headers)){
+        /* header("Location: cantact.php?mailsend");*/
+        echo"<script> alert('Votre message à bien été envoyé."."\n"." merci de nous avoir contacter')</script>";
+        }
+        else { 
+            echo"<script> alert('Une erreur s'est produite."."\n"." Veuillez reéssayer)</script>";
+        }
+    }    
+?>
+                
