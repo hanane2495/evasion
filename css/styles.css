@@ -260,8 +260,8 @@ nav .navbar-right li a{
 }
 
 .logo-sur-marbre{
-    width: 55%;
-    height: 50%;
+    width: 205px;
+    height: 209px;
 }
 
 .sm-container{
@@ -392,7 +392,7 @@ nav .navbar-right li a{
     height: 600px;
     position: absolute;
     right: 0px;
-    top:3200px;
+    top:3500px;
     z-index: -10;
     opacity: 0.4;
 }
@@ -402,7 +402,7 @@ nav .navbar-right li a{
     height: 200px;
     position: absolute;
     left: 5px;
-    top:3900px;
+    top:4200px;
     z-index: -10;
     opacity: 0.7;
 }
@@ -442,7 +442,7 @@ button{ border: none;}
 
 .service-icon{
     width:90px;
-    height: 90px;
+    height: 115px;
     
 }
 
@@ -633,8 +633,8 @@ input:focus{
 }
 
 .logo-footer{
-    width: 250px;
-    height: 65px;
+    width: 255px;
+    height: 63px;
     margin-bottom: 10%;
 }
 
