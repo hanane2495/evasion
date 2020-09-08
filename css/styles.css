@@ -776,3 +776,17 @@ p{
     top:92%;
     left :5%;
 }
+
+a{
+    color: white;
+    text-decoration: none;
+}
+
+a:hover{
+    color: #d9a491;
+    text-decoration: none;
+}
+
+.sm-button-footer:hover{
+    background: #d9a491;
+}
